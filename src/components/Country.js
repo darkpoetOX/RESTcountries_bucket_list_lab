@@ -8,9 +8,9 @@ const Country = ({ country, countryVisited}) => {
             <p>Region: {country.region}</p>
             <p>Currency: {country.currency}</p>
             <p>Latitude: {country.latlng[0]}</p>
-            {/* above line accesses the countrie's latitude */}
+            {/* above line accesses the country's latitude */}
             <p>Longitude: {country.latlng[1]}</p>
-            {/* above line accesses the countrie's longitude */}
+            {/* above line accesses the country's longitude */}
             <button onClick={() => countryVisited(country)}>
                 Mark as Visited
             </button>
