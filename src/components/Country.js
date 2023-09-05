@@ -1,4 +1,4 @@
-const Country = ({ country, countryVisited}) => {
+const Country = ({ country, markCountryVisited}) => {
     return (
 
         // return each country in list format
@@ -11,7 +11,7 @@ const Country = ({ country, countryVisited}) => {
             {/* above line accesses the country's latitude */}
             <p>Longitude: {country.latlng[1]}</p>
             {/* above line accesses the country's longitude */}
-            <button onClick={() => countryVisited(country)}>
+            <button onClick={() => markCountryVisited(country)}>
                 Mark as Visited
             </button>
         </li>
